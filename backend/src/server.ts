@@ -6,7 +6,7 @@ const app = express();
 
 app.set('json spaces', 2);
 app.use(express.json());
-app.use(express.static('frontend'));
+app.use(express.static('build'));
 app.use('/api/v1', v1);
 
 const PORT = process.env.PORT || 3000;
